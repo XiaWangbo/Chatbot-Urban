@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-color: #fafafa;
 }
 
 .chat-container {
@@ -23,6 +24,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
 }
@@ -30,12 +33,15 @@ body {
 .chat-messages {
     flex-grow: 1;
     overflow-y: auto;
+    height: 400px;
+    max-height: 80vh;
+    padding: 0 10px;
 }
 
 .user-message,
 .bot-message {
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 18px;
+    padding: 12px;
     margin-bottom: 10px;
     max-width: 80%;
     word-wrap: break-word;
@@ -43,11 +49,13 @@ body {
 
 .user-message {
     align-self: flex-end;
-    background-color: #f1f1f1;
+    background-color: #007BFF;
+    color: white;
 }
 
 .bot-message {
-    background-color: #dedede;
+    background-color: #f1f1f1;
+    color: #333;
 }
 
 .chat form {
@@ -57,17 +65,24 @@ body {
     margin-top: 10px;
 }
 
+.form-group {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
 .question-label,
 .pdf-label {
-    width: 100%;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .question-input {
-    flex-grow: 1;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .chat form input[type="file"] {
@@ -82,7 +97,6 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
 }
 
 .chat form button:hover {

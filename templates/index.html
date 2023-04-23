@@ -11,11 +11,14 @@
         <div class="chat">
             <div class="chat-messages"></div>
             <form id="chat-form" enctype="multipart/form-data">
-                <label for="question" class="question-label">Your question:</label>
-                <input type="text" id="question" name="question" class="question-input" required>
-                <br>
-                <label for="pdf" class="pdf-label">PDF (optional):</label>
-                <input type="file" id="pdf" name="pdf" accept=".pdf">
+                <div class="form-group">
+                    <label for="question" class="question-label">Your question:</label>
+                    <input type="text" id="question" name="question" class="question-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="pdf" class="pdf-label">PDF (optional):</label>
+                    <input type="file" id="pdf" name="pdf" accept=".pdf">
+                </div>
                 <button type="submit">Ask</button>
             </form>
         </div>

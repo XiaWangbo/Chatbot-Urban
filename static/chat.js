@@ -27,11 +27,12 @@ form.addEventListener("submit", (event) => {
         .then((data) => {
             const botMessage = document.createElement("div");
             botMessage.classList.add("bot-message");
-            botMessage.innerText = data.answer;
+            botMessage.innerText = data.answer || "I'm sorry, I couldn't find an answer.";
             chatMessages.appendChild(botMessage);
             chatMessages.scrollTop = chatMessages.scrollHeight;
         });
 
     questionInput.value = "";
 });
+
 
