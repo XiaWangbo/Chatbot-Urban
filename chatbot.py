@@ -6,7 +6,7 @@ import pdfplumber
 from io import BytesIO
 
 app = Flask(__name__)
-openai.api_key = "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"
+openai.api_key = "AAA"
 
 
 def extract_text_from_pdf(file):
